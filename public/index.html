@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="javascripts/chat.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/chat_ui.js" type="text/javascript" charset="utf-8"></script>
+    <title>Chat App</title>
+
+  </head>
+  <body>
+    <div class="chat-box">
+      <div class="rooms-sidebar">
+        <ul class="room-list">
+        </ul>
+      </div>
+      <div class="display-msgs">
+        <h1>Chat log!</h1>
+
+        <ul class="chat-log">
+
+        </ul>
+      </div>
+      <form class="send-message">
+        <input type="text" class="msg-entry" placeholder="Type a message!">
+        </input>
+
+        <button>Send</button>
+      </form>
+    </div>
+  </body>
+</html>
