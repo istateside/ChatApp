@@ -1,0 +1,24 @@
+{
+  "name": "ChatApp",
+  "version": "0.0.0",
+  "description": "Simple Chat App, learning node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/istateside/ChatApp.git"
+  },
+  "author": "Kevin Fleischman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/istateside/ChatApp/issues"
+  },
+  "homepage": "https://github.com/istateside/ChatApp",
+  "dependencies": {
+    "socket.io": "1.0.x",
+    "mime": "~1.2.7",
+    "node-static": "^0.7.4"
+  }
+}
