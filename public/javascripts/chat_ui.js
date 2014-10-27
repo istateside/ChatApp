@@ -30,9 +30,12 @@ $(document).ready(function() {
       displayMessage(msg);
     });
 
-    socket.on('roomChange', function(roomList) {
+    socket.on('roomChange', function(data) {
       $list = $('.room-list')
       $list.empty();
+      var roomList = data['roomList'];
+      var nicknames = data['nicknames'];
+
       for (var room in roomList) {
         $roomLi = $('<li>').text(room);
         $list.append($roomLi);
@@ -40,7 +43,7 @@ $(document).ready(function() {
         $userUl = $('<ul>');
         $roomLi.append($userUl);
         for (user in userList) {
-          $userUl.append($('<li>').text(user));
+          $userUl.append($('<li>').text(nicknames[userList[user]]));
         }
       }
     });

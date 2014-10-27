@@ -1,0 +1,92 @@
+h1, body, head, html, ul, li {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: inherit;
+  list-style: none;
+  font-family: sans-serif;
+  font-style: inherit;
+}
+
+h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  display: block;
+  width: 100%;
+}
+
+div.chat-box {
+  float: left;
+  position: relative;
+/*  overflow: auto;*/
+  display: block;
+  margin: 40px;
+  border: 2px solid black;
+  width: 80%;
+  height: 80%
+}
+
+div.rooms-sidebar {
+  position: absolute;
+  left: 0px;
+  border: 2px solid red;
+  margin: 15px;
+  padding: 10px;
+  height: 90%;
+  width: 20%;
+}
+
+div.display-msgs {
+  right: 0px;
+  position: absolute;
+  overflow: auto;
+  border: 2px solid blue;
+  width: 70%;
+  height: 90%;
+  margin: 15px 15px 15px 0;
+  padding: 10px;
+}
+
+ul.chat-log {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  height: auto
+  float: left;
+  border: 1px solid black;
+  overflow: scroll;
+
+}
+
+ul.chat-log li {
+  padding-bottom: 5px;
+  background: #5299F7;
+}
+
+ul.chat-log li:nth-child(even) {
+  background: #1E7CF7;
+}
+
+ul.room-list li {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+ul.room-list li ul li {
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+input {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 10%;
+}
+
+button:{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}

@@ -23,6 +23,8 @@ $(document).ready(function() {
     if (command === '/nick') {
       this.socket.emit('nicknameChangeRequest', parameters);
     } else if (command === '/join') {
+      console.log("Joining room....");
+      console.log(parameters);
       this.socket.emit('joinRoomRequest', parameters);
       this.room = parameters;
     } else {
